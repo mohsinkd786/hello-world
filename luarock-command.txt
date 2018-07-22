@@ -1,0 +1,15 @@
+#Create Rock
+#Build & Deploy in Kong
+
+luarocks build ./hello-world-1.0-1.rockspec --local
+
+Modify sudo nano /etc/kong/kong.conf  --plugins=bundled, hello-world
+
+Add your plugin in it
+
+save the conf file & execute the below command
+
+sudo kong reload
+
+now follow the same steps to use the plugin in your Kong defined service as we peformed earlier
+

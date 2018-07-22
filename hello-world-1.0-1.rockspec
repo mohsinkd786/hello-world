@@ -2,13 +2,12 @@ package = "hello-world"
 version = "1.0-1"
 supported_platforms = {"linux"}
 source = {
-  url = ".",
-  tag = "v1.0-1"
+  url = "git://github.com/mohsinkd786/hello-world"
 }
 description = {
   summary = "The Hello World Plugin",
-  license = "Apache 2.0",
-  homepage = "http",
+  license = "Mastek",
+  homepage = "https://github.com/mohsinkd786/hello-world",
   detailed = [[
       An example Hello World plugin. Bootstrap your plugin development.
   ]],
@@ -19,7 +18,7 @@ dependencies = {
 build = {
   type = "builtin",
   modules = {
-    ["kong.plugins.hello-world.handler"] = "src/handler.lua",
-    ["kong.plugins.hello-world.schema"] = "src/schema.lua"
+    ["kong.plugins.hello-world.handler"] = "handler.lua",
+    ["kong.plugins.hello-world.schema"] = "schema.lua"
   }
 }

@@ -1,8 +1,7 @@
 local BasePlugin = require ("kong.plugins.base_plugin")
 
---local CustomHandler = BasePlugin:extend()
+local CustomHandler = BasePlugin:extend()
 
---local CustomHandler	= {}
 
 -- constructor 
 
